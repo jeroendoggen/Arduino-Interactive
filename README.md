@@ -15,13 +15,13 @@ Arduino Interactive Workshop
  * Adjust the pin numbers (look at the schematic)
  
 ### Piezo element
- * Use the example in the handouts
+ * Use the "piezo.ino" example in the "software" folder.
  * Adjust the pin numbers (look at the schematic)
 
 ### Photo resistor
- * Use the example in the handouts
+ * Use the "photoresistor.ino" example in the "software" folder.
  * Adjust the pin numbers (look at the schematic)
 
 ### Optocoupler
- * Use the example in the handouts
+ * Use the "optocoupler.ino" example in the "software" folder.
  * Adjust the pin numbers (look at the schematic)
