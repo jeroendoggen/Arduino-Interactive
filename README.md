@@ -9,6 +9,7 @@ Test everything separately to verify your hardware.
 ### LED testing
  * Open the "Blink" example.
  * Adjust the pin numbers (look at the schematic)
+
 You can also test all the "extra pins" in the same way. (sync1, sync2, open1, open2) 
 
 ### Pushbutton
