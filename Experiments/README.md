@@ -1,23 +1,19 @@
 # Experiments
 
-## Button Press
+## 1. Button Press
 This example (button_press.ino) is a skeleton file that you can adapt to control your camera with a pushbutton:
  1. Change the code
  2. Upload to the Arduino
  3. Press the button
  4. The camera should take a picture
 
-## Stop-motion
+## 2. Stop-motion
 This example (stop_motion.ino) is a skeleton file that you can adapt to create a stop_motion photoset.
  1. Change the code
  2. Upload to the Arduino
  4. The camera should take a set of pictures in a loop
  
-## Multi-camera
-This example describes how to control multiple camera's at the same time using the sync1/sync2 or the SDA/SCL pins.
- * [example](https://github.com/jeroendoggen/Arduino-Interactive/tree/master/Hardware)
-
-## Multi Camera
+## 3. Multi Camera
 It is possible to connect multiple Photomind devices to control multiple camera's at the same time.
 
 The hardware provides connectivity for two options:
@@ -26,7 +22,7 @@ The hardware provides connectivity for two options:
 
 Make sure all your devices share a common ground. (for example using one of the sync pins)
 
-### Interrupt-based
+### 3.1. Interrupt-based Multi Camera
 We need al least two devices:
  * master: sends the command (write a one to a digital pin)
  * slave: responds to the commands (detect the rising edge and do 'something')
@@ -41,5 +37,5 @@ How it works:
  
 Example code (skeleton): "interrupt_master.ino" and "interrupt_slave.ino"
 
-### Master-slave serial (I2C)
+### 3.2. Master-slave Serial (I2C) Multi Camera
 TODO add info
