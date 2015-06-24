@@ -1,6 +1,7 @@
 // Arduino Interactive: button t
 // Copyright 2015 Jeroen Doggen, Christian Munk, Tom Peeters
 
+int test = 777;
 int delayTime = 10000;                            // 10 seconds
 int buttonState = 0;
 
