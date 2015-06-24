@@ -1,7 +1,8 @@
 // Arduino Interactive: button t
 // Copyright 2015 Jeroen Doggen, Christian Munk, Tom Peeters
 
-int test = 777;
+//#include <setup.ino>
+
 int delayTime = 10000;                            // 10 seconds
 int buttonState = 0;
 
@@ -13,6 +14,12 @@ int buttonBtn = 12;
 int extFlash = 8;
 int camTrigger = 9;
 int camFocus = 10;
+
+int piezoValue = 0;
+int photoValue = 0;
+int potiValue = 0;
+int btnState = 0;
+int switchState = 0;
 
 
 void setup()
@@ -28,16 +35,26 @@ void loop()
   {
     takePicture();
   }
-  delay(delayTime);                              // delay between pictures
+  delay(delayTime);                              
 }
 
 int readSensors()
 {
-int piezoValue = digitalRead(piezo);
-int photoValue = digitalRead(photo);
-int potiValue = digitalRead(poti);
+piezoValue = digitalRead(piezo);
+photoValue = digitalRead(photo);
+potiValue = digitalRead(poti);
 
-  return(buttonState);
+btnState = digitalRead(buttonBtn);
+switchState = digitalRead(switchBtn);
+
+
+
+Serial.print("Piezo-Wert : ");Serial.println(piezoValue);
+Serial.print("Photo-Resistor : ");Serial.println(photo);
+Serial.print("Potentiometer : ");Serial.println(poti);
+Serial.print("Taster : ");Serial.println(buttonBtn);
+Serial.print("Schalter : ");Serial.println(switchBtn);
+return(true);
 }
 
 void takePicture()
