@@ -5,15 +5,15 @@ int delayTime = 10000;                            // 10 seconds
 
 void setup()
 {
-     //TODO                                      // configure the input pins
-     //TODO                                      // configure the output pins
-     Serial.begin(9600);                         // use the serial port
+    //TODO                                      // configure the input pins
+    //TODO                                      // configure the output pins
+    Serial.begin(9600);                         // use the serial port
 }
 
 void loop()
 {
   takePicture();
-  delay(delayTime);                              // delay between pictures
+  delay(delayTime);                             // delay between pictures
 }
 
 void takePicture()

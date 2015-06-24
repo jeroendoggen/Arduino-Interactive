@@ -5,10 +5,10 @@
 
 void setup()
 {
-     //TODO                                      // configure the input pins
-     //TODO                                      // configure the output pins
-     Serial.begin(9600);                         // use the serial port
-     // Enable interrupt service routine
+    //TODO                                      // configure the input pins
+    //TODO                                      // configure the output pins
+    Serial.begin(9600);                         // use the serial port
+    // Enable interrupt service routine
 }
 
 void loop()
@@ -17,7 +17,7 @@ void loop()
 }
 
 
-void ISR()
+void interruptHandler()
 {
 // do 'something' (for example: take a picture)
 }
