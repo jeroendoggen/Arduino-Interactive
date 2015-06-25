@@ -5,8 +5,8 @@
 
 void setup()
 {
-    //TODO                                      // configure the input pins
-    //TODO                                      // configure the output pins
+    //TODO                                      // configure the INPUT pin: READ the interrupt 
+   
     Serial.begin(9600);                         // use the serial port
     // Enable interrupt service routine
 }

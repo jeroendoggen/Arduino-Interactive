@@ -5,8 +5,9 @@ int delayTime = 1000;
 
 void setup()
 {
-    //TODO                                      // configure the output pins
+    //TODO                                      // configure the OUTPUT pins
     Serial.begin(9600);                         // use the serial port
+                          
 }
 
 void loop()
